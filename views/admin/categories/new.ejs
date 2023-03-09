@@ -1,0 +1,18 @@
+<%- include('../../partials/header.ejs'); %>
+<%- include('../../partials/navbar.ejs'); %>
+<div class="container">
+    <hr>
+    <div class="card">
+        <div class="card-header">
+            <h1>cadastro de categoria</h1>
+        </div>
+            <div class="card-body">
+            <form method = "POST" action="/categories/save" onsubmit="alertWar(event,value)">
+                <input class = "form-control" type="text" name="title" placeholder="digite aqui">
+                <button class="btn btn-success"> cadastrar</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<%- include('../../partials/footer.ejs'); %>
